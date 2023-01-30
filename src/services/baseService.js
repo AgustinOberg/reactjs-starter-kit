@@ -2,8 +2,10 @@ import axios from 'axios';
 import i18next from 'i18next';
 
 const CREDENTIALS = {
-    URL: import.meta.env.VITE_BACKEND_URL || 'CHANGE .ENV FILE -> CREATE VITE_BACKEND_URL',
-}
+	URL:
+		import.meta.env.VITE_BACKEND_URL ||
+		'CHANGE .ENV FILE -> CREATE VITE_BACKEND_URL',
+};
 
 export const baseService = axios.create({
 	baseURL: CREDENTIALS.URL,
