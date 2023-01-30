@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Loading from '@/components/Loading';
 
 const App = () => {
 	const { t, i18n } = useTranslation();
@@ -9,6 +10,7 @@ const App = () => {
 		<>
 			<p className='text-center mt-12'>{t('title')}</p>
 			<button onClick={changeLanguage}>{t('change')}</button>
+			<Loading />
 		</>
 	);
 };
